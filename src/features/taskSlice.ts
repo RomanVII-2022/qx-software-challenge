@@ -1,10 +1,10 @@
+// this slice will be used to:
+// 1. fetch all the tasks from the task api
+// 2. hand the response - pending, fullfilled, rejected
+// 3. maintain the states tied to tasks
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-const axiosInstance = axios.create({
-    baseURL: "https://task.quatrixglobal.com",
-    validateStatus: () => true,
-    withCredentials: true
-})
 import { RootState } from "../application/store";
 
 interface Task {
@@ -26,7 +26,7 @@ interface InitialState {
 }
 
 export const fetchAllTasks = createAsyncThunk("task/fetchAllTasks", async () => {
-    const response = await axiosInstance.get('/tasks')
+    const response = await axios.get("/tasks")
     return response.data
 })
 
@@ -46,6 +46,7 @@ const taskSlice = createSlice({
         })
         builders.addCase(fetchAllTasks.fulfilled, (state, action) => {
             state.loading = false
+            state.tasks = action.payload.data
         })
         builders.addCase(fetchAllTasks.rejected, (state, action) => {
             state.loading = false

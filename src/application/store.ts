@@ -1,3 +1,5 @@
+// this is the global store for all reducers
+
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import taskReducer from '../features/taskSlice';
