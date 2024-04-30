@@ -24,6 +24,10 @@
 
 5. **Access the Application:** Once the project is running, you can access it in your web browser. The application may be running on localhost:5173
 
+## Page Layout
+
+![Sample Image](sample.png)
+
 ## Reasons for choosing React
 1. **Component-Based Architecture:** React's component-based architecture allows developers to build encapsulated, reusable UI components. This makes it easier to manage complex UIs and promotes code reusability.
 
