@@ -24,6 +24,25 @@
 
 5. **Access the Application:** Once the project is running, you can access it in your web browser. The application may be running on localhost:5173
 
+## Run the Project Using Docker
+1. **Clone the Repository:** 
+
+        git clone <repository-url>
+
+2. **Navigate to the Repository:** 
+
+        cd <repository-name>
+
+3. **Build a Docker Image:** 
+
+        docker build -t <image-name> .
+
+4. **Run the Docker Image:** 
+
+        docker run -d -p <host-port:container-port> --network host <image-name>
+
+5. **Access the Application:** Once the project is running, you can access it in your web browser. The application may be running on localhost:5173
+
 ## Page Layout
 
 ![Sample Image](sample.png)
@@ -77,26 +96,36 @@
 
 8. ~~Global Search Component: Create a global search component to search for tasks based on keywords.~~
 
-9. Implement a clear pagination control component
+9. ~~Implement a clear pagination control component~~
 
-10. Visually distinguish task statuses (e.g., color-coding).
+10. ~~Visually distinguish task statuses (e.g., color-coding).~~
 
-11. New Task Form: Implement a form for creating new tasks, ensuring a smooth user experience.
+11. ~~New Task Form: Implement a form for creating new tasks, ensuring a smooth user experience.~~
 
-12. Create Task API Integration: Send a POST request to the Task API to create a new task.
+12. ~~Create Task API Integration: Send a POST request to the Task API to create a new task.~~
 
-13. Edit Task Functionality: Allow editing of existing tasks by sending a PATCH request to update the changes.
+13. ~~Change the status of an open task to in_progress.~~
 
-14. Confirmation Step for Deletion: Implement a confirmation step before deleting a task to prevent accidental deletions.
+14. ~~Change the status of an in-progress task to open.~~
 
-15. Delete Task API Integration: Send a DELETE request to the Task API to delete a task.
+15. ~~Change the status of an open or in-progress task to closed.~~
 
-16. Task Status Buttons: Implement buttons for actions based on the current task status, following the provided transition table and diagram.
+16. ~~Change the status of a closed task to open.~~
 
-17. Dynamic Task Status Update: Update the task's displayed status dynamically based on user actions.
+17. ~~Edit Task Functionality: Allow editing of existing tasks by sending a PATCH request to update the changes.~~
 
-18. Testing: Perform thorough testing of the application to ensure functionality and reliability.
+18. ~~Confirmation Step for Deletion: Implement a confirmation step before deleting a task to prevent accidental deletions.~~
 
-19. Dockerize the application.
+19. ~~Delete Task API Integration: Send a DELETE request to the Task API to delete a task.~~
 
-20. React Native Build: Build the same application using React Native for mobile compatibility.
+20. ~~Task Status Buttons: Implement buttons for actions based on the current task status, following the provided transition table and diagram.~~
+
+21. ~~Dynamic Task Status Update: Update the task's displayed status dynamically based on user actions.~~
+
+22. ~~Sort table data by clicking on the column header~~
+
+24. ~~Dockerize the application.~~
+
+23. Testing: Perform thorough testing of the application to ensure functionality and reliability.
+
+25. React Native Build: Build the same application using React Native for mobile compatibility.
