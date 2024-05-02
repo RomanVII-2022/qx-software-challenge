@@ -43,9 +43,17 @@
 
 5. **Access the Application:** Once the project is running, you can access it in your web browser. The application may be running on localhost:5173
 
+
 ## Page Layout
 
 ![Sample Image](sample.png)
+
+## Use the Mobile Application
+> **I have included the apk file on the root directory of this repo. The name is: application-13b1a7d8-8891-47be-ac6c-d078d2aea08a.apk. Open it on your device.**
+
+## Mobile App Layout
+
+![Sample Image](app.jpg)
 
 ## Reasons for choosing React
 1. **Component-Based Architecture:** React's component-based architecture allows developers to build encapsulated, reusable UI components. This makes it easier to manage complex UIs and promotes code reusability.
@@ -80,7 +88,7 @@
 
 5. **Compatibility with JavaScript:** TypeScript is a superset of JavaScript, which means that existing JavaScript code can be gradually migrated to TypeScript. This allows developers to take advantage of TypeScript's features without having to rewrite the entire codebase. 
 
-## Progress so far
+## What Was Achieved
 1. ~~Project Setup: Set up the project with React + Typescript + Vite.~~
 
 2. ~~Navigation Bar Component: Create a Navigation Bar component for easy navigation within the application.~~
@@ -126,6 +134,12 @@
 
 24. ~~Dockerize the application.~~
 
-23. Testing: Perform thorough testing of the application to ensure functionality and reliability.
+25. ~~React Native Build: Build the same application using React Native for mobile compatibility.~~
 
-25. React Native Build: Build the same application using React Native for mobile compatibility.
+26. ~~Mobile App - Create a screen to show all tasks~~
+
+27. ~~Mobile App - Create a pagination component~~
+
+28. ~~Mobile App - Add new task~~
+
+29. ~~Change task status~~
